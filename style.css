@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	font-family: Montserrat, sans-serif;
+}
+
+.bgimage {
+	background:  url('../svg/bg.svg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 700px;
+}
+
+.headerset{
+	padding-top: 220px;
+	box-sizing: border-box;
+}
+
+.headerset h1{
+	font-size: 50px;
+	color: #981BCC;
+}
+
+.headerset h3{
+	font-size: 35px;
+}
+
+ .navbar{
+ 	background-color: rgba(183, 11, 255, .8); 
+ }
+
+
+.menu a{
+    font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+	word-spacing: 10px;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-shadow: 0px 0px;
+
+}
+
+.menu a:hover{
+	color: yellow;
+}
+
+.btn{
+	border-radius: 25px;
+	outline: currentColor;
+
+
+}
+
+
+button:hover{
+ background-color: #981BCC;
+
+}
+.btn h4{
+     margin-top: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #981BCC;
+}
+
+.btn h4:hover{
+	color: #fff;
+
+}
+
+/*-----Services-----*/
+
+.ourservices{
+	padding: 50px 0px 30px;
+	height: auto;
+	width: 100%;
+}
+
+.ourservices h1{
+	font-weight: bold;
+}
+
+.rowsetting{
+	margin: 80px 0px;
+
+}
+
+.imgsetting{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-pencil-square-o{
+	margin-top: 30px;
+
+}
+
+.fa-desktop{
+	margin-top: 30px;
+}
+
+.fa-users{
+	margin-top: 30px;
+}
+
+
+.rowsetting h2{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.rowsetting p{
+	padding: 10px;
+	color: #6c757d;
+}
+
+/*-----portfolio-----*/
+.portfolio{
+	height: auto;
+	width: 100%;
+	padding: 50px 0px 50px;
+}
+
+.portfilio h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.card{
+	margin-top: 30px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----Myteam-----*/
+
+.myteam{
+	width: 100%;
+	height: auto;
+	padding: 60px 0px 30px;
+}
+
+.myteam h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.teamsetting{
+	margin-top: 40px;
+
+}
+
+
+/*-----Footer-----*/
+.footer{
+	height: 50px;
+}
+.footer h6{
+	line-height: 50px;
+}
+
+
+/*-----contact-----*/
+.main{
+	        align-items: center;
+			background-color: #222;
+			box-shadow: 1px 2px 5px #555;
+		}
+		.info{
+			width: 100%;
+			padding: 7px;
+			text-shadow: 1px 1px 1px #222;
+			color: #fff;
+			font-size: 20px;
+		}
+		.form-box{
+			padding: 10px;
+		}
+		label{
+			color: #fff;
+			font-size: 18px;
+		}
+		.inp,.msg-box{
+			width: 70%;
+			padding: 10px;
+			margin-top: 4px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			border: 2px solid #B70BFF;
+			font-weight: bold;
+			color: #B70BFF;
+			border-right: 15px solid #B70BFF;
+			border-left: 15px solid #B70BFF;
+			resize: none;
+		}
+		.msg-box{
+			height: 80px;
+		}
+		.inp:focus,.msg-box:focus{
+			outline: none;
+			border: 2px solid navy;
+			border-right: 15px solid navy;
+			border-left: 15px solid navy;
+		}
+		.sub-btn{
+			width: 70%;
+			padding: 10px;
+			border-radius: 5px;
+			margin-top: 5px;
+			border: none;
+			background: linear-gradient(#B70BFF,#800000);
+			cursor: pointer;
+			color: #fff;
+			font-size: 20px;
+			text-shadow: 1px 1px 1px #444;
+		}
+		.sub-btn:hover{
+			background: linear-gradient(#800000,#B70BFF);
+			opacity: 0.8;
+			transition: all ease-out 0.2s;
+		}
+		.sub-btn:focus{
+			outline: none;
+		}
+		
+
+/*-----Responsive-----*/
+@media(min-width: 992px){
+
+}
+
+@media(min-width: 768px)and (max-width: 991px){
+	.main{
+				width: 90%;
+			}
+}
+
+@media(min-width: 575)and (max-width: 767){
+	
+}
+
+@media(min-width: 460)and (max-width: 574){
+	
+}
+@media (max-width: 479px){
+
+}
