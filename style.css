@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
-	font-family: Montserrat, sans-serif;
+	font-family: Righteous, sans-serif;
 }
 
 .bgimage {
-	background:  url('bg.svg');
+	background:  url('../svg/bg.svg');
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	width: 100%;
@@ -14,21 +14,14 @@ body{
 }
 
 .headerset{
-	padding-top: 220px;
+	padding-top: 240px;
 	box-sizing: border-box;
 }
 
-.headerset h1{
-	font-size: 50px;
-	color: #981BCC;
-}
-
-.headerset h3{
-	font-size: 35px;
-}
 
  .navbar{
- 	background-color: rgba(183, 11, 255, .8); 
+ 	width: 100%;
+
  }
 
 
@@ -47,28 +40,96 @@ body{
 	color: yellow;
 }
 
-.btn{
-	border-radius: 25px;
-	outline: currentColor;
-
-
-}
 
 
 button:hover{
  background-color: #981BCC;
 
 }
-.btn h4{
-     margin-top: 8px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #981BCC;
+.custom-btn {
+  background: #eee;
+  color: #5b5b5b;
+  font-weight: bold;
+  border-radius: 80px;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: normal;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
 }
 
-.btn h4:hover{
-	color: #fff;
+.custom-btn.custom-btn-bg {
+  background: #474559;
+  color: #ffffff;
+}
+.custom-btn.custom-btn-bg:hover {
+  background: #981BCC;
+  color: #ffffff !important;
+}
 
+
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  min-width: 350px;
+  position: relative;
+}
+
+.animated-item {
+  color: #981BCC;
+}
+
+.animated-item {
+  font-size: 30px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+.animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*-----Services-----*/
@@ -165,6 +226,11 @@ button:hover{
 
 
 /*-----contact-----*/
+.contact{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
 .main{
 	        align-items: center;
 			background-color: #222;
@@ -172,13 +238,14 @@ button:hover{
 		}
 		.info{
 			width: 100%;
-			padding: 7px;
 			text-shadow: 1px 1px 1px #222;
 			color: #fff;
 			font-size: 20px;
 		}
 		.form-box{
+			align-items: center;
 			padding: 10px;
+			margin-left: 18px
 		}
 		label{
 			color: #fff;
@@ -234,18 +301,104 @@ button:hover{
 }
 
 @media(min-width: 768px)and (max-width: 991px){
+	.bgimage {
+	background-size: 100%;
+	width: 100%;
+	height: auto;
+}
+.headerset{
+	padding-top: 120px;
+	box-sizing: border-box;
+}
+
+.headerset h1{
+	font-size: 12px;
+	color: #981BCC;
+}
+
+.headerset h3{
+	font-size: 5px;
+}
 	.main{
 				width: 90%;
 			}
 }
 
 @media(min-width: 575)and (max-width: 767){
-	
+	.bgimage {
+	width: 100%;
+}
+.headerset{
+	padding-top: 120px;
+	box-sizing: border-box;
+}
+
+.headerset h1{
+	font-size: 12px;
+	color: #981BCC;
+}
+
+.headerset h3{
+	font-size: 5px;
+}
 }
 
 @media(min-width: 460)and (max-width: 574){
-	
+	.bgimage {
+	background:  url('../svg/bg.svg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+}
+.headerset{
+	padding-top: 80px;
+	box-sizing: border-box;
+}
+
+.headerset h1{
+	font-size: 20px;
+	color: #981BCC;
+}
+
+.headerset h3{
+	font-size: 10px;
+}
 }
 @media (max-width: 479px){
+.bgimage {
+	background:  url('../svg/bg.svg');
+	background-size: 100%;
+	background-attachment: fixed;
+	overflow: hidden;
+	height: 210px;
+	margin-right: 0px;
+	
+}
+.headerset{
+	padding-top: 95px;
+	box-sizing: border-box;
+}
 
+.headerset h1{
+	font-size: 18px;
+	color: #981BCC;
+}
+
+.headerset h3{
+	font-size: 12px;
+}
+.navbar{
+	width: 100%;
+}
+.btn h4{
+	font-size: 10px;
+	font-weight: bold;
+	color: #981BCC;
+}
+.menu{
+	width: 100%
+}
+.main{
+				width: 90%;
+			}
 }
