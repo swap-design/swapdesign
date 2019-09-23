@@ -6,7 +6,7 @@ body{
 }
 
 .bgimage {
-	background:  url('../svg/bg.svg');
+	background:  url('bg.svg');
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	width: 100%;
