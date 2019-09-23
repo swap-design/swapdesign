@@ -366,7 +366,7 @@ button:hover{
 }
 @media (max-width: 479px){
 .bgimage {
-	background:  url('../svg/bg.svg');
+	background:  url('bg.svg');
 	background-size: 100%;
 	background-attachment: fixed;
 	overflow: hidden;
