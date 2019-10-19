@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Swap Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- other css file -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+</head>
+<body>
+
+	<!-- Nav start -->
+	<header>
+		<nav class="navbar  navbar-expand-md   text-center fixed-top" id="nav">
+
+			<div class="container">
+				<img src="img/logo.png" height="50px;">
+
+				<button class="navbar-toggler bg-danger navbar-light " type="button" data-toggle="collapse" data-target="#collapsenavbar">
+					
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse   navbar-collapse text-center" id="collapsenavbar">
+					<ul class="navbar-nav menu ml-auto">
+						<li class="nav-item" class="active">
+							<a href="" class="nav-link"><span class="fa fa-home">HOME</span></a>
+						</li>
+						<li class="nav-item">
+							<a href="#services" class="nav-link "><i class="fa fa-cog">SERVICES</i></a></li>
+
+						<li class="nav-item">
+							<a href="#portfolio" class="nav-link"><span class="fa fa-folder-open">PORTFOLIO</span></a></li>
+
+						<li class="nav-item">
+							<a href="#about" class="nav-link"><span class="fa fa-user">ABOUT</span></a></li>
+
+						<li class="nav-item">
+							<a href="#contact" class="nav-link"><span class="fa fa-envelope">CONTACT</span></a></li>
+
+					</ul>
+					
+				</div>
+			</div>
+			
+		</nav>
+	</header>
+
+	<!-- Nav End -->
+
+    <section class="banner">
+        <div class="container">
+            <div class="row text-center">
+
+
+                <div class="col-lg-6 title1">
+            <h1 class="animated animated-text">
+                  <span class="mr-2">I am Working On </span><br>
+                    <div class="animated-info">
+                        <span class="animated-item">Logo Design</span>
+                        <span class="animated-item">Web Design</span>
+                        <span class="animated-item">Social Media Marketing</span>
+                    </div>
+            </h1>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link"><span class="spinner-grow spinner-grow-sm"></span>Hire Me</a>
+            </div>
+                    <div class="col-lg-6 title2 .hidden-sm-down">
+                      <img class="img-fluid" src="img/me.png" alt="swap-design">
+                        </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+
+    <section class="servicespage">
+        <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+    </section>
+
+
+<section class="contact" id="contact">
+	<div class="container contact-form">
+		<div class="contact-image">
+                <img src="img/rocket.png" alt="rocket_contact"/>
+            </div>
+            	<h3 class="text-center">Drop Us a Message</h3>
+
+               <div class="row">
+	
+	<div class="col-lg-6 col-md-6 col-sm-6 col-10 d-block m-auto"  class="main">
+		<form action="mail_handler.php" method="post" name="form" class="form-box">
+			<label for="name"><i class="fa fa-user"></i> Name</label><br>
+			<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+			<label for="email"><i class="fa fa-envelope"></i> Email ID</label><br>
+			<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+			<label for="phone"><i class="fa fa-phone "></i> Phone</label><br>
+			<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+			<label for="message"><i class="fa fa-envelope"></i> Message</label><br>
+			<textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
+			<input type="submit" name="submit" value="Send" class="sub-btn">
+		</form>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-10 d-block m-auto ">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.368845887423!2d73.84333331489259!3d18.51222688741385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c192ae2860ef%3A0x23c50a2362a8caea!2sSWAP%20DESIGN!5e0!3m2!1sen!2sin!4v1569064989423!5m2!1sen!2sin" width="100%" height="400px" align="center" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+	</div>
+	<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+		</div>
+</div>
+	
+</section>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="row credit">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">Copyrights &copy All right Reversed 2019.<a class="text-warning ml-2" href="https://www.swapdesign.in" target="_blank">Swap Design</a></p>
+				</div>
+		</div>
+
+	</div>
+	
+</footer>
+             
+
+
+
+
+
+<!-- jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/slick.min.js'></script>
+
+<!-- Portfolio isotope -->
+<script type="text/javascript" src="js/isotope.min.js"></script>
+<!-- creating portfolio jquery -->
+<script type="text/javascript" src="js/swapscript.js"></script> 
+
+</body>
+</html>
